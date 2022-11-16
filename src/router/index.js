@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import ListView from '../views/ListView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '/list',
+    name: 'list',
+    component: () => import(/* webpackChunkName: "list" */ '../views/ListView.vue')
   },
   {
     path: '/about',
