@@ -43,7 +43,7 @@
       dark
       shrink-on-scroll
       src="https://picsum.photos/1920/1080?random"
-      
+
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -81,17 +81,18 @@
   /* export default {
     data: () => ({ drawer: null }),
   }*/
-  
+
   export default {
-    data: () => ({  
+    data: () => ({
         drawer: null,
-    
+
         items: [
           { title: 'List', icon: 'mdi-format-list-checks', to: '/list' },
           { title: 'About', icon: 'mdi-help-box' , to: '/about'},
+          { title: 'Data', icon: 'mdi-database' , to: '/data'}
         ],
-  
-      
+
+
     }),
   }
 

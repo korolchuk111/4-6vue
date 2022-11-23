@@ -5,7 +5,7 @@
         label="Add item"
         v-model="newItemTitle"
         clearable
-        append-icon="majesticons:basket-2"
+        append-icon="mdi-basket-outline"
         @click:append="addNewItem()"
         @keyup.enter="addNewItem()"
     ></v-text-field>
@@ -13,7 +13,7 @@
         flat
     >
       <v-list-item-group
-          v-for="(item) in shoppingList"
+          v-for="item in shoppingList"
           :key="item.id"
       >
         <v-list-item
